@@ -52,10 +52,10 @@ const Navbar = () => {
     return (
         <nav className="fixed w-full bg-black/80 backdrop-blur-md border-b border-purple-800 z-50">
             <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-                <h1 className="text-white text-2xl font-bold select-none">Portfolio</h1>
+                <h1 className="text-white text-2xl font-bold select-none sm:px-0 px-5">Portfolio</h1>
 
                 {/* Desktop Menu */}
-                <div className="hidden md:flex space-x-6">
+                <div className="hidden md:flex space-x-6 px-5">
                     {menuItems.map((item) => (
                         <button
                             key={item.id}
@@ -68,7 +68,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu Toggle */}
-                <div className="md:hidden">
+                <div className="md:hidden px-5">
                     <motion.button
                         whileTap={{ scale: 0.9 }}
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

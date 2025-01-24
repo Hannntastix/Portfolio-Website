@@ -21,7 +21,7 @@ const Competition = () => {
                             target="_blank"
                             rel="noopener noreferrer"
                             key={index}
-                            className="bg-black/50 border border-purple-800 rounded-lg overflow-hidden hover:border-blue-600 transition group"
+                            className="bg-black/50 border-2 border-b-4 border-purple-800 rounded-lg overflow-hidden hover:border-blue-600 transition group"
                         >
                             <div className="relative aspect-video">
                                 <img

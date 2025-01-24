@@ -8,6 +8,7 @@ import Organization from '@/app/components/Organization'
 import Footer from './components/Footer'
 import Profile from './components/Profile'
 import Competition from './components/Competition'
+import Skills from './components/Skills'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         <Navbar />
         <Hero />
         <Profile />
+        <Skills />
         <Experience />
         <Organization />
         <Competition />

@@ -18,8 +18,8 @@ export default function Experience() {
             ]
         },
         {
-            company: "Transfornation ID",
-            role: "Video Editor",
+            company: "Transfornation ID (Non-Government Organization)",
+            role: "Video Editor Internship",
             period: "May 2024 - Jun 2024",
             description: [
                 "Creating an innovative plan and concept for video content to be used for marketing purposes.",
@@ -72,7 +72,7 @@ export default function Experience() {
                                         key={idx}
                                         src={img}
                                         alt={`Documentation ${idx + 1}`}
-                                        className="object-cover rounded max-h-36 lg:max-h-40 xl:max-h-48 md:max-h-28 w-96 border border-blue-600 hover:border-blue-800 transition"
+                                        className="object-cover rounded hover:scale-105 max-h-36 lg:max-h-40 xl:max-h-48 md:max-h-28 w-96 border border-blue-600 hover:border-blue-800 transition"
                                     />
                                 ))}
                             </div>

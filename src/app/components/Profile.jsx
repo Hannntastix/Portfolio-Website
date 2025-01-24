@@ -41,18 +41,6 @@ const Profile = () => {
                                 <p className="text-lg font-bold text-white">Institut Teknologi Sumatera (2022 - Now)</p>
                                 <p className="text-lg font-bold text-zinc-300">GPA 3.31/4.00</p>
                             </div>
-                            <div className="border border-purple-800 py-4 px-2 rounded-lg bg-black/50">
-                                <h3 className="text-purple-400 font-semibold">Programming Skills</h3>
-                                <p className="text-lg font-bold text-white">HMTL, CSS, JavaScript, Python, C++, React JS, Tailwind CSS, Next JS, MongoDB, MySQL</p>
-                            </div>
-                            <div className="border border-purple-800 p-4 rounded-lg bg-black/50">
-                                <h3 className="text-purple-400 font-semibold">Tools</h3>
-                                <p className="text-lg font-bold text-white">Xampp 7/10</p>
-                                <p className="text-lg font-bold text-white">VS Code 8/10</p>
-                                <p className="text-lg font-bold text-white">Figma 7/10</p>
-                                <p className="text-lg font-bold text-white">Postman 7/10</p>
-                                <p className="text-lg font-bold text-white">GIT 7/10</p>
-                            </div>
                         </div>
                     </div>
                 </div>
