@@ -20,6 +20,7 @@ const Navbar = () => {
         { id: 'profile', label: 'About Me', icon: '👤' },
         { id: 'experience', label: 'Experiences', icon: '💼' },
         { id: 'projects', label: 'Projects', icon: '🚀' },
+        { id: 'certifications', label: 'Certifications', icon: '📜' },
         { id: 'footer', label: 'Contact', icon: '📞' }
     ]
 

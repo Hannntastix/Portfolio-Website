@@ -5,23 +5,23 @@ import { motion, useAnimation } from "framer-motion"
 
 const Skills = () => {
     const skills = [
-        { name: "HTML", image: "/html.png" },
-        { name: "CSS", image: "/css.png" },
-        { name: "JavaScript", image: "/javascript.png" },
-        { name: "C++", image: "/javascript.png" },
-        { name: "Bootstrap", image: "/javascript.png" },
-        { name: "React", image: "/react.png" },
-        { name: "Next.js", image: "/nextjs.png" },
-        { name: "Tailwind CSS", image: "/tailwind.png" },
-        { name: "MongoDB", image: "/tailwind.png" },
-        { name: "MySQL", image: "/tailwind.png" },
-        { name: "Xampp", image: "/tailwind.png" },
-        { name: "Visual Studio Code", image: "/tailwind.png" },
-        { name: "Postman", image: "/tailwind.png" },
-        { name: "VirtualBox", image: "/tailwind.png" },
-        { name: "Git", image: "/git.png" },
-        { name: "GitHub", image: "/github.png" },
-        { name: "Figma", image: "/figma.png" },
+        { name: "HTML", image: "/assets/HTML.png" },
+        { name: "CSS", image: "/assets/CSS.png" },
+        { name: "JavaScript", image: "/assets/JS.png" },
+        { name: "C++", image: "/assets/C++.png" },
+        { name: "Python", image: "/assets/Python.png" },
+        { name: "Bootstrap", image: "/assets/Bootstrap.png" },
+        { name: "React", image: "/assets/React.png" },
+        { name: "Next.js", image: "/assets/Next.png" },
+        { name: "Tailwind CSS", image: "/assets/Tailwind.png" },
+        { name: "MongoDB", image: "/assets/Mongodb.png" },
+        { name: "MySQL", image: "/assets/Mysql.png" },
+        { name: "Xampp", image: "/assets/Xampp.png" },
+        { name: "Visual Studio Code", image: "/assets/VScode.png" },
+        { name: "Postman", image: "/assets/Postman.png" },
+        { name: "Git", image: "/assets/Git.png" },
+        { name: "GitHub", image: "/assets/Github.png" },
+        { name: "Figma", image: "/assets/Figma.png" },
     ]
 
     const controls = useAnimation()
@@ -69,7 +69,7 @@ const Skills = () => {
                         {skills.map((skill, index) => (
                             <motion.div
                                 key={index}
-                                className="shrink-0 bg-black/50 border border-purple-800 rounded-lg p-6 text-center hover:border-blue-600 transition"
+                                className="shrink-0 bg-zinc-900 rounded-lg p-6 text-center hover:border-blue-600 transition"
                                 style={{ minWidth: "200px" }}
                             >
                                 <img
@@ -89,7 +89,7 @@ const Skills = () => {
                         dragConstraints={{ left: -3210, right: 0 }}
                         onDragStart={() => {
                             setIsDragging(true)
-                            controls.stop() // Stop animation while dragging
+                            controls.stop()
                         }}
                         onDragEnd={() => {
                             setIsDragging(false)
@@ -102,8 +102,8 @@ const Skills = () => {
                         {skills.map((skill, index) => (
                             <motion.div
                                 key={index}
-                                className="shrink-0 bg-black/50 border border-purple-800 rounded-lg p-6 text-center hover:border-blue-600 transition"
-                                style={{ minWidth: "200px" }} // Ensure consistent size
+                                className="shrink-0 bg-zinc-900 rounded-lg p-6 text-center hover:border-blue-600 transition"
+                                style={{ minWidth: "200px" }}
                             >
                                 <img
                                     src={skill.image}
@@ -122,7 +122,7 @@ const Skills = () => {
                         dragConstraints={{ left: -2950, right: 0 }}
                         onDragStart={() => {
                             setIsDragging(true)
-                            controls.stop() // Stop animation while dragging
+                            controls.stop()
                         }}
                         onDragEnd={() => {
                             setIsDragging(false)
@@ -135,8 +135,8 @@ const Skills = () => {
                         {skills.map((skill, index) => (
                             <motion.div
                                 key={index}
-                                className="shrink-0 bg-black/50 border border-purple-800 rounded-lg p-6 text-center hover:border-blue-600 transition"
-                                style={{ minWidth: "200px" }} // Ensure consistent size
+                                className="shrink-0 bg-zinc-900 rounded-lg p-6 text-center hover:border-blue-600 transition"
+                                style={{ minWidth: "200px" }}
                             >
                                 <img
                                     src={skill.image}
@@ -155,7 +155,7 @@ const Skills = () => {
                         dragConstraints={{ left: -2700, right: 0 }}
                         onDragStart={() => {
                             setIsDragging(true)
-                            controls.stop() // Stop animation while dragging
+                            controls.stop()
                         }}
                         onDragEnd={() => {
                             setIsDragging(false)
@@ -168,8 +168,8 @@ const Skills = () => {
                         {skills.map((skill, index) => (
                             <motion.div
                                 key={index}
-                                className="shrink-0 bg-black/50 border border-purple-800 rounded-lg p-6 text-center hover:border-blue-600 transition"
-                                style={{ minWidth: "200px" }} // Ensure consistent size
+                                className="shrink-0 bg-zinc-900 rounded-lg p-6 text-center hover:border-blue-600 transition"
+                                style={{ minWidth: "200px" }}
                             >
                                 <img
                                     src={skill.image}

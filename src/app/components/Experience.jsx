@@ -57,7 +57,7 @@ export default function Experience() {
                 <h2 className="text-4xl font-bold text-center text-white mb-12">Experiences</h2>
                 <div className="space-y-8">
                     {experiences.map((exp, index) => (
-                        <div key={index} className="border border-purple-800 bg-black/50 p-6 rounded-lg hover:border-blue-600 transition">
+                        <div key={index} className="border-2 border-purple-800 bg-black/50 p-6 rounded-lg hover:border-blue-600 transition">
                             <h3 className="text-xl font-bold text-white mb-2">{exp.company}</h3>
                             <div className="text-purple-400 mb-2">{exp.role}</div>
                             <div className="text-blue-400 mb-4">{exp.period}</div>

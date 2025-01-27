@@ -7,6 +7,14 @@ const Competition = () => {
             description: "This national-level competition challenged us to create AI innovations addressing specific subthemes and develop innovative products from those ideas. It provided an excellent opportunity to push the boundaries of AI and explore its potential to enhance healthcare services and life sciences.",
             link: "https://drive.google.com/drive/folders/1_S537w8z0-Hv68NURenwXJHECZCfLIt4?usp=sharing",
             period: "October 2024"
+        },
+        {
+            title: "Point Project 2.0 Competition",
+            achievement: "Top 16 out of 60 participants",
+            image: "/assets/Competition2.png",
+            description: "This provincial-level competition challenged us to create innovative applications and develop comprehensive app designs, from low-fidelity (lo-fi) wireframes to high-fidelity (hi-fi) prototypes. It provided an excellent opportunity to explore creative solutions and push the boundaries of application design, focusing on user experience and impactful problem-solving.",
+            link: "https://drive.google.com/drive/folders/1-JKjSrNC-YPVRhv3OErZMSj7ejXA4326?usp=sharing",
+            period: "December 2024"
         }
     ]
 
