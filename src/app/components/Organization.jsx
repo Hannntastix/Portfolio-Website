@@ -40,14 +40,14 @@ const Organization = () => {
     ]
 
     return (
-        <section id="organizations" className="py-20 bg-black">
+        <section id="organizations" className="py-20 bg-none">
             <div className="max-w-7xl mx-auto px-4">
                 <h2 className="text-4xl font-bold text-center text-white mb-12">Organization Experiences</h2>
                 <div className="grid md:grid-cols-2 gap-8">
                     {organizations.map((org, index) => (
                         <div
                             key={index}
-                            className="bg-black/50 border border-purple-800 rounded-lg overflow-hidden hover:border-blue-600 transition group"
+                            className="bg-black/80 border border-purple-800 rounded-lg overflow-hidden hover:border-blue-600 transition group"
                         >
                             <div className="relative aspect-video">
                                 <img

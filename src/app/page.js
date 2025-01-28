@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import Profile from './components/Profile'
 import Competition from './components/Competition'
 import Skills from './components/Skills'
+import AnimatedSection from './components/AnimatedSection'
 
 export default function Home() {
   return (
@@ -17,13 +18,27 @@ export default function Home() {
       <div className="relative z-10">
         <Navbar />
         <Hero />
-        <Profile />
-        <Skills />
-        <Experience />
-        <Organization />
-        <Competition />
-        <Projects />
-        <Certifications />
+        <AnimatedSection animation="slideUp">
+          <Profile />
+        </AnimatedSection>
+        <AnimatedSection animation="slideUp">
+          <Skills />
+        </AnimatedSection>
+        <AnimatedSection animation="slideUp">
+          <Experience />
+        </AnimatedSection>
+        <AnimatedSection animation="scale">
+          <Organization />
+        </AnimatedSection>
+        <AnimatedSection animation="slideUp">
+          <Competition />
+        </AnimatedSection>
+        <AnimatedSection animation="slideRight">
+          <Projects />
+        </AnimatedSection>
+        <AnimatedSection animation="fade">
+          <Certifications />
+        </AnimatedSection>
         <Footer />
       </div>
     </main>

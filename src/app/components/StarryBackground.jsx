@@ -1,4 +1,16 @@
+"use client"
+
+import { useEffect, useState } from "react";
+
 export default function StarryBackground() {
+    const [isClient, setIsClient] = useState(false);
+
+    useEffect(() => {
+        setIsClient(true);
+    }, []);
+
+    if (!isClient) return null;
+
     return (
         <div className="fixed inset-0 z-0">
             <div className="absolute inset-0 bg-black">
@@ -17,5 +29,5 @@ export default function StarryBackground() {
                 ))}
             </div>
         </div>
-    )
+    );
 }

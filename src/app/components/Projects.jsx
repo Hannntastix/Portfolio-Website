@@ -4,7 +4,7 @@ export default function Projects() {
     const projects = [
         {
             title: "Website Latihan Soal SDN 1 Sabahbalau",
-            description: "Carelories is an innovative mobile application designed to help users easily track their calorie intake by scanning food with their smartphone camera. Powered by advanced Convolutional Neural Networks (CNN), it accurately identifies food items and instantly calculates their calorie content. The app provides detailed nutritional information, stores meal history for easy tracking, and offers personalized recommendations to help users meet their health goals.",
+            description: "This project is a community service initiative for SDN 1 Sabahbalau, Lampung Selatan, providing a website as an information hub and practice platform for 4th–6th grade students. Through interviews with staff, we identified a lack of accessible learning resources. To address this, we developed an interactive website featuring school information, curriculum-based practice questions, admin access to manage content, and a dashboard for school information updates. The website uses React.js, Next.js, and Tailwind CSS for the front-end, with Node.js and MongoDB for the back-end. Following Agile methodology, usability is evaluated using the System Usability Scale (SUS). As the coder, I handled front-end and back-end development, ensuring an intuitive and functional interface. This project reflects our commitment to enhancing education through technology.",
             image: "/assets/project1.png",
             link: "https://website-sdn-1-sabahbalau.vercel.app/",
             tech: ["Next.js", "Tailwind", "Node.js", "MongoDB"]
@@ -52,7 +52,7 @@ export default function Projects() {
                 <h2 className="text-4xl font-bold text-center text-white mb-12">Projects</h2>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {projects.map((project, index) => (
-                        <div key={index} className="bg-black/50 border border-purple-800 rounded-lg overflow-hidden hover:border-blue-600 transition group">
+                        <div key={index} className="bg-black/80 border border-purple-800 rounded-lg overflow-hidden hover:border-blue-600 transition group">
                             <a href={project.link} target="_blank" rel="noopener noreferrer">
                                 <div className="relative aspect-video">
                                     <img

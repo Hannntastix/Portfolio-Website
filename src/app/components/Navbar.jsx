@@ -69,7 +69,7 @@ const Navbar = () => {
                 </div>
 
                 {/* Mobile Menu Toggle */}
-                <div className="md:hidden px-5">
+                <div className="md:hidden px-5 py-1">
                     <motion.button
                         whileTap={{ scale: 0.9 }}
                         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
