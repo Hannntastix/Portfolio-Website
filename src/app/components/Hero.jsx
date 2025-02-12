@@ -1,12 +1,12 @@
 "use client"
 
-import { useState, useEffect } from "react"
 import { motion, useAnimation } from "framer-motion"
 import { ArrowDown } from "lucide-react";
 import Typewriter from "./Typewriter";
 import Typewriters from "./Typewriters";
 
 const Hero = () => {
+
     return (
         <section id="home" className="h-screen flex flex-col items-center justify-center relative bg-none">
             {/* Main Content */}

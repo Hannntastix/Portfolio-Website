@@ -1,3 +1,5 @@
+"use client"
+
 import Navbar from '@/app/components/Navbar'
 import Hero from '@/app/components/Hero'
 import Projects from '@/app/components/Projects'
@@ -10,8 +12,11 @@ import Profile from './components/Profile'
 import Competition from './components/Competition'
 import Skills from './components/Skills'
 import AnimatedSection from './components/AnimatedSection'
+import { useRouter } from 'next/navigation'
+import BottomPage from './components/BottomPage'
 
 export default function Home() {
+
   return (
     <main className="min-h-screen bg-black relative px-1">
       <StarryBackground />
@@ -33,11 +38,14 @@ export default function Home() {
         <AnimatedSection animation="slideUp">
           <Competition />
         </AnimatedSection>
-        <AnimatedSection animation="slideRight">
+        <AnimatedSection animation="slideUp">
           <Projects />
         </AnimatedSection>
         <AnimatedSection animation="fade">
           <Certifications />
+        </AnimatedSection>
+        <AnimatedSection animation="slideUp">
+          <BottomPage />
         </AnimatedSection>
         <Footer />
       </div>
