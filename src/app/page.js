@@ -14,8 +14,24 @@ import Skills from './components/Skills'
 import AnimatedSection from './components/AnimatedSection'
 import { useRouter } from 'next/navigation'
 import BottomPage from './components/BottomPage'
+import { useEffect, useState } from 'react'
+import LoadingModal from './components/LoadingModal'
 
 export default function Home() {
+
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+      const timer = setTimeout(() => {
+        setIsLoading(false);
+      }, 1000);
+
+      return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return <LoadingModal />
+  }
 
   return (
     <main className="min-h-screen bg-black relative px-1">

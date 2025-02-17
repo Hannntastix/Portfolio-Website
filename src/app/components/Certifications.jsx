@@ -3,6 +3,13 @@ import Link from "next/link"
 export default function Certifications() {
     const certifications = [
         {
+            name: "Fundamentals of machine learning",
+            issuer: "Microsot Learn",
+            date: "Jan 2025",
+            image: "/assets/Cert7.png",
+            link: "https://learn.microsoft.com/en-us/users/raihanathalah-5682/achievements/print/3rjcuy2h",
+        },
+        {
             name: "The Complete 2024 Web Development Bootcamp",
             issuer: "Udemy",
             date: "Jul 2024",
@@ -36,13 +43,6 @@ export default function Certifications() {
             date: "Jul 2024 - Jul 2027",
             image: "/assets/Cert5.png",
             link: "https://www.dicoding.com/certificates/6RPN10KKRX2M",
-        },
-        {
-            name: "[Soft Skill Webinar #4] Adaptability and Resilience - DBS Foundation Coding Camp 2024",
-            issuer: "Dicoding & DBS",
-            date: "Jun 2024",
-            image: "/assets/Cert6.png",
-            link: "https://drive.google.com/drive/folders/1Qo0QvABhWEBKteaSZpBM2cZTYn8Xzljw?usp=sharing",
         },
     ]
 

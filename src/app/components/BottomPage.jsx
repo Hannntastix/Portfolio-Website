@@ -5,7 +5,7 @@ import React, { useState } from 'react'
 
 const BottomPage = () => {
 
-  const [isDisabled, setIsDisabled] = useState(true);
+  const [isDisabled, setIsDisabled] = useState(false);
 
   const router = useRouter();
 

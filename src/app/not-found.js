@@ -1,11 +1,28 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import StarryBackground from "./components/StarryBackground";
+import LoadingModal from "./components/LoadingModal";
 
 export default function NotFound() {
+
+    const [isLoading, setIsLoading] = useState(true);
+    
     const router = useRouter();
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsLoading(false);
+        }, 2000)
+
+        return () => clearTimeout(timer);
+    }, []);
+
+    if (isLoading) {
+        return <LoadingModal />
+    }
+
 
     const handleBackToHome = () => {
         router.push("/");
@@ -60,7 +77,7 @@ export default function NotFound() {
                         <h1 className="text-6xl font-bold text-blue-500 select-none">404</h1>
                         <h2 className="text-2xl font-semibold text-red-500">Oops, We Have a Problem!</h2>
                         <p className="text-blue-300 max-w-md mx-auto font-semibold">
-                            Looks like this page has drifted into deep space. Let's get you back to the main mission.
+                            Looks like this page is not exist. Let's get you back to the main page.
                         </p>
 
                         {/* Back to Home Button */}
