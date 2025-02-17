@@ -22,7 +22,7 @@ const FeedbackForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        const res = await fetch("http://localhost:3000/api/feedback", {
+        const res = await fetch("https://portfolio-m-raihan-athalah-ilhams-projects.vercel.app/api/feedback", {
             method: "POST",
             headers: {
                 "Content-type": "application/json",
