@@ -4,7 +4,7 @@ export default function Certifications() {
     const certifications = [
         {
             name: "Fundamentals of machine learning",
-            issuer: "Microsot Learn",
+            issuer: "Microsot Learning",
             date: "Jan 2025",
             image: "/assets/Cert7.png",
             link: "https://learn.microsoft.com/en-us/users/raihanathalah-5682/achievements/print/3rjcuy2h",

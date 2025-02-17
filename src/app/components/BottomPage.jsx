@@ -23,7 +23,7 @@ const BottomPage = () => {
         className={`select-none my-7 inline-flex items-center gap-2 px-4 py-2 ${isDisabled ? "bg-gray-300 text-zinc-700" : "transform transition-transform duration-400 ease-in-out hover:scale-110 bg-gradient-to-r from-indigo-700 to-indigo-950 text-white"} rounded-lg shadow-md hover:shadow-lg group`}
         onClick={() => handleNavigate()}
       >
-        Coming Soon
+        Feedback Form
       </button>
     </div>
   )
