@@ -15,7 +15,6 @@ export async function POST(request) {
         { message: "Feedback berhasil dibuat" },
         { status: 201 }
     )
-
 }
 
 export async function GET() {
