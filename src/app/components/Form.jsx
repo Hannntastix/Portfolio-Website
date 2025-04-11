@@ -12,6 +12,7 @@ const FeedbackForm = () => {
     const [hover, setHover] = useState(0);
     const [feedbackInfo, setFeedbackInfo] = useState("");
     const [isDisabled, setIsDisabled] = useState(true);
+    const [isPressed, setIsPressed] = useState(false);
 
     const router = useRouter();
 
@@ -20,6 +21,10 @@ const FeedbackForm = () => {
     }, [feedbackInfo]);
 
     const handleSubmit = async (e) => {
+
+        setIsPressed(true);
+        setIsDisabled(true);
+
         e.preventDefault();
 
         const res = await fetch("https://portfolio-m-raihan-athalah-ilhams-projects.vercel.app/api/feedback", {
@@ -61,8 +66,8 @@ const FeedbackForm = () => {
                                 >
                                     <Star
                                         className={`w-8 h-8 ${star <= (hover || rating)
-                                                ? "text-blue-400 fill-yellow-400"
-                                                : "text-gray-300"
+                                            ? "text-blue-400 fill-yellow-400"
+                                            : "text-gray-300"
                                             }`}
                                     />
                                 </button>
@@ -82,16 +87,49 @@ const FeedbackForm = () => {
                     </div>
 
                     {/* Submit Button */}
-                    <Button
-                        type="submit"
-                        disabled={isDisabled}
-                        className={`select-none w-full py-2 rounded-md transition-color ${isDisabled
+                    {isPressed ? (
+                        <Button
+                            type="submit"
+                            disabled={isDisabled}
+                            className={`select-none my-7 inline-flex items-center gap-2 px-4 py-2 ${isDisabled
+                                ? "bg-blue-950 text-white"
+                                : "transform transition-transform duration-400 ease-in-out hover:scale-110 bg-gradient-to-r from-indigo-700 to-indigo-950 text-white"
+                                } rounded-lg shadow-md hover:shadow-lg group`}
+                        >
+                            <svg
+                                className="animate-spin h-5 w-5 text-white"
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                            >
+                                <circle
+                                    className="opacity-25"
+                                    cx="12"
+                                    cy="12"
+                                    r="10"
+                                    stroke="currentColor"
+                                    strokeWidth="4"
+                                ></circle>
+                                <path
+                                    className="opacity-75"
+                                    fill="currentColor"
+                                    d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+                                ></path>
+                            </svg>
+                            Loading...
+                        </Button>
+                    ) : (
+                        <Button
+                            type="submit"
+                            disabled={isDisabled}
+                            className={`select-none w-full py-2 rounded-md transition-color ${isDisabled
                                 ? "bg-gray-300 text-zinc-700 cursor-not-allowed"
                                 : "transform transition-transform duration-400 ease-in-out bg-indigo-700 hover:bg-blue-800 text-white"
-                            }`}
-                    >
-                        Send Feedback
-                    </Button>
+                                }`}
+                        >
+                            Send Feedback
+                        </Button>
+                    )}
                 </form>
             </div>
         </div>

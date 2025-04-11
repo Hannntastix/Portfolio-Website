@@ -28,7 +28,7 @@ const Footer = () => {
                     <div className="text-center p-6 bg-black/50 border border-purple-800 rounded-lg hover:border-blue-600 transition">
                         <Phone className="w-8 h-8 text-purple-400 mx-auto mb-4" />
                         <h3 className="text-xl font-bold text-white mb-2">Phone</h3>
-                        <a href="tel:+1234567890" className="text-gray-300 hover:text-blue-400 transition">
+                        <a href="https://wa.me/6285266704515" target='_blank' className="text-gray-300 hover:text-blue-400 transition">
                             +62 85266 704515
                         </a>
                     </div>
